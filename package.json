@@ -12,7 +12,7 @@
     }
   ],
   "description": "Paymill API wrapper",
-  "version": "0.0.4",
+  "version": "0.1.2",
   "homepage": "https://github.com/komola/paymill-node",
   "repository": {
     "type": "git",
@@ -31,5 +31,11 @@
   ],
   "keywords": ["paymill", "payment", "creditcard", "elv"],
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+      "qunit": "*",
+      "nock": "*"
+  },
+  "scripts": {
+      "test": "node tests/test_runner.js"
+  }
 }

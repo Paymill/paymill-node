@@ -1,4 +1,6 @@
-# Paymill-Node
+# Paymill-Node [![Build Status](https://travis-ci.org/komola/paymill-node.png?branch=master)](https://travis-ci.org/komola/paymill-node) ![Dependencies](https://david-dm.org/komola/paymill-node.png) ![Dev dependencies](https://david-dm.org/komola/paymill-node/dev-status.png)
+
+[![NPM](https://nodei.co/npm/paymill-node.png?downloads=true)](https://nodei.co/npm/paymill-node/)
 
 This is a Node.JS wrapper for [Paymills](http://paymill.com/) [API/v2](https://www.paymill.com/en-gb/documentation-3/reference/api-reference/index.html).
 
@@ -41,6 +43,7 @@ called with an error code (if any) and then the response.
 * `paymill.transactions` - (https://www.paymill.com/en-gb/documentation-3/reference/api-reference/#document-transactions)
     * `.create(transaction)`
     * `.details(transaction_id)`
+    * `.update(transaction_id, data)`
     * `.list(data)`
 * `paymill.refunds` - (https://www.paymill.com/en-gb/documentation-3/reference/api-reference/#document-refunds)
     * `.refund(tranaction_id, amount, description)`
@@ -80,6 +83,17 @@ I created an account paymill-node@mailinator.com for testing purposes. The passw
 See the [issue tracker](http://github.com/komola/paymill-node/issues).
 
 ## Author
+
+Authors, sorted by number of commits:
+```
+$ git shortlog -s | sort -rn
+    18	Thomas Schaaf
+    15	Nikolas Poniros
+    11	Sebastian Hoitz
+     2	Jörg Tillmann
+     1	Quentin Adam
+     1	Emilian Stoilkov
+```
 
 Sebastian Hoitz (hoitz@komola.de), Thomas Schaaf (schaaf@komola.de).
 Development was sponsored by [komola](http://www.komola.de/).
